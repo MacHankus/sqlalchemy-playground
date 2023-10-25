@@ -32,7 +32,7 @@ def test_container_should_create_5_different_sessions():
     assert len(sessions) == len(set(sessions))
 
 
-def test_container_should_not_raise_timeouteerror_when_generating_number_of_sessions_equal_to_pool_size():
+def test_container_should_not_raise_timeouterror_when_generating_number_of_sessions_equal_to_pool_size():
     # Arrange
     sessions = []
 
@@ -44,7 +44,7 @@ def test_container_should_not_raise_timeouteerror_when_generating_number_of_sess
             sessions.append(session)
 
 
-def test_container_should_raise_timeouteerror_after_reaching_max_overflow():
+def test_container_should_raise_timeouterror_after_reaching_max_overflow():
     # Arrange
     sessions = []
 
@@ -56,7 +56,7 @@ def test_container_should_raise_timeouteerror_after_reaching_max_overflow():
             sessions.append(session)
 
 
-def test_container_should_not_raise_timeouteerror_when_sessions_are_closed():
+def test_container_should_not_raise_timeouterror_when_sessions_are_closed():
     # Arrange
     sessions = []
 
