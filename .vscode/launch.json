@@ -29,7 +29,7 @@
                 "-v",
                 "-x",
                 "-s",
-                "tests/with_container/test_basics_with_container.py"
+                "tests/basics/test_sqlalchemy_basics.py"
             ],
             "env": {
                 "PYTHONPATH": "${workspaceFolder}\\src;${workspaceFolder}\\tests",
