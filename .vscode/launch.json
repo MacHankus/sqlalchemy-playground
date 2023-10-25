@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        // {
+        //     "name": "Python: auth/webservice/src/main.py",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}\\auth\\webservice\\src\\main.py",
+        //     "console": "integratedTerminal",
+        //     "justMyCode": false,
+        //     "args" : [],
+        //     "envFile": "${workspaceFolder}\\auth\\webservice\\.env",
+        //     "env":{
+        //     }
+        // },
+        {
+            "name": "Python: test",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "args": [
+                "-v",
+                "-x",
+                "-s",
+                "-k test_should_use_only_5_connections_between_sessions"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}\\src;${workspaceFolder}\\tests",
+            },
+            "envFile": "${workspaceFolder}\\.env",
+        },
+    ]
+}

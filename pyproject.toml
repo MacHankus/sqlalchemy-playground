@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "sqlalchemy-playground"
+version = "0.1.0"
+description = ""
+authors = ["Vemco"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+amqpstorm = "2.10.6"
+dependency-injector = "4.41.0"
+pyinstaller = "5.7.0"
+pytest = "7.2.1"
+loguru = "0.6.0"
+pyodbc = "4.0.34"
+python = ">=3.9,<3.10"
+python-dotenv = "0.21.1"
+pydantic = "1.10.4"
+six = "1.16.0"
+sqlalchemy = "1.4.46"
+strenum = "0.4.9"
+httpx = "0.24.0"
+pytest-httpx = "0.22.0"
+pyhumps = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.0.252"
+black = "23.1.0"
+isort = "5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 120
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "poetry.lock"
+]

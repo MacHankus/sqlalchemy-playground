@@ -1,0 +1,31 @@
+{
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
+  "eslint.workingDirectories": ["stockrework/ui", "spedycja/ui"],
+  "eslint.enable": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#193c74",
+    "activityBar.background": "#193c74",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#d22d6d",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#193c74",
+    "statusBar.background": "#10264a",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#193c74",
+    "statusBarItem.remoteBackground": "#10264a",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#10264a",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#10264a99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#10264A",
+  "python.formatting.provider": "black"
+}
