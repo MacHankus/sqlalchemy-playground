@@ -29,7 +29,7 @@
                 "-v",
                 "-x",
                 "-s",
-                "-k test_should_use_only_5_connections_between_sessions"
+                "tests/with_container/test_basics_with_container.py"
             ],
             "env": {
                 "PYTHONPATH": "${workspaceFolder}\\src;${workspaceFolder}\\tests",
