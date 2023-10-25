@@ -29,7 +29,8 @@
                 "-v",
                 "-x",
                 "-s",
-                "tests/basics/test_sqlalchemy_basics.py"
+                "-k test_session_should_raise_timeouterror_when_other_sessions_exhaust_queue_pool",
+                "tests/basics/test_sqlalchemy_overflow.py"
             ],
             "env": {
                 "PYTHONPATH": "${workspaceFolder}\\src;${workspaceFolder}\\tests",
